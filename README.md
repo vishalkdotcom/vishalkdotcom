@@ -7,7 +7,7 @@
 
 - 📫 Reach me: **hello@vishalk.com**
 
-- 📄 Know about my experiences at [vishalk.com](vishalk.com)
+- 📄 Know about my experiences at [vishalk.com](https://vishalk.com)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
