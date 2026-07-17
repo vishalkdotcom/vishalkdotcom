@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Vishal</h1>
-<h3 align="center">Frontend developer with a flair for React.js and Figma</h3>
+<h3 align="center">Frontend developer with a flair for React.js and TypeScript</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vishalkdotcom&label=Views&color=5d84f9&style=flat-square" alt="vishalkdotcom" /> </p>
 
-- 💬 Ask me about **React.js, Next.js, TailwindCSS, CSS-in-JS, TypeScript, JavaScript, Figma, UI Design**
+- 💬 Ask me about **React.js, Next.js, TailwindCSS, CSS-in-JS, TypeScript, JavaScript, AI Engineer**
 
 - 📫 Reach me: **hello@vishalk.com**
 
