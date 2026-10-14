@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%" role="img" aria-label="Vishal Kumar  Minimalist Proof Index">
+  <title>Vishal Kumar  Senior Frontend Engineer</title>
+  <style>
+    .bg { fill: #f4f5f6; }
+    .frame { fill: none; stroke: #cfd4da; stroke-width: 1; }
+    .rule { stroke: #cfd4da; stroke-width: 1; }
+    .fg { fill: #1a1c1e; }
+    .muted { fill: #5a6065; }
+    .accent { fill: #2563a8; }
+    .ok { fill: #2f8f4e; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #141618; }
+      .frame { stroke: #2a2e33; }
+      .rule { stroke: #2a2e33; }
+      .fg { fill: #e8e6e3; }
+      .muted { fill: #8c9196; }
+      .accent { fill: #6cb6ff; }
+      .ok { fill: #5dba7a; }
+    }
+  </style>
+
+  <rect class="bg" x="0.5" y="0.5" width="879" height="139" rx="6" />
+  <rect class="frame" x="0.5" y="0.5" width="879" height="139" rx="6" />
+
+  <text class="sans fg" x="28" y="46" font-size="22" font-weight="700" letter-spacing="-0.02em">Vishal Kumar</text>
+  <text class="mono accent" x="182" y="45" font-size="12" font-weight="600">Senior Frontend Engineer · React / Next.js · Product UI</text>
+
+  <circle class="ok" cx="732" cy="41" r="4" />
+  <text class="mono ok" x="742" y="45" font-size="11" font-weight="600">Open to remote roles</text>
+
+  <text class="sans muted" x="28" y="74" font-size="13">7+ years building React/Next.js product UI for remote teams (13+ years total). Reporting surfaces, form/admin workflows, and platform cleanup.</text>
+
+  <line class="rule" x1="28" y1="92" x2="852" y2="92" />
+
+  <text class="mono muted" x="28" y="116" font-size="11">PORTFOLIO</text>
+  <text class="mono fg" x="102" y="116" font-size="11" font-weight="600">vishalk.com</text>
+
+  <text class="mono muted" x="220" y="116" font-size="11">CONTACT</text>
+  <text class="mono fg" x="284" y="116" font-size="11" font-weight="600">hello@vishalk.com</text>
+
+  <text class="mono muted" x="440" y="116" font-size="11">DELIVERY</text>
+  <text class="mono fg" x="508" y="116" font-size="11" font-weight="600">AI-native · Reviewed, tested, owned</text>
+
+  <text class="mono muted" x="852" y="116" font-size="11" text-anchor="end">PUNJAB, IN · UTC+5:30</text>
+</svg>
