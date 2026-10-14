@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" role="img" aria-label="Vishal Kumar - Arcade Proof Cabinet 1986">
+  <title>Vishal Kumar -- Senior Frontend Engineer // Arcade Cabinet Scoreboard</title>
+  <defs>
+    <linearGradient id="crtVoid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090414" />
+      <stop offset="50%" stop-color="#0D0620" />
+      <stop offset="100%" stop-color="#05020C" />
+    </linearGradient>
+    <linearGradient id="neonMagenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2A85" />
+      <stop offset="100%" stop-color="#FF7B00" />
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#00BBF9" />
+    </linearGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.35" />
+    </pattern>
+    <filter id="arcadeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .arcade-hdr { fill: #FFE600; font-size: 11px; font-weight: 800; letter-spacing: 0.14em; }
+    .arcade-cyan { fill: #00F5D4; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; }
+    .arcade-pink { fill: #FF2A85; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; }
+    .arcade-white { fill: #FFFFFF; font-size: 11.5px; font-weight: 700; }
+
+    @keyframes coinBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0.15; }
+    }
+    .coin-blink { animation: coinBlink 1.4s infinite; }
+  </style>
+
+  <!-- Outer Arcade Bezel -->
+  <rect x="0" y="0" width="920" height="460" rx="16" fill="#05020A" stroke="#FF2A85" stroke-width="2" />
+  <rect x="8" y="8" width="904" height="444" rx="12" fill="url(#crtVoid)" stroke="#2E1A47" stroke-width="2" />
+
+  <!-- Top Scoreboard Strip -->
+  <rect x="20" y="18" width="880" height="36" rx="6" fill="#120826" stroke="#3B1E5E" />
+  <text x="36" y="41" class="mono arcade-pink">1UP // VISHAL KUMAR</text>
+  <text x="460" y="41" text-anchor="middle" class="mono arcade-hdr" filter="url(#arcadeGlow)">HI-SCORE: 124 PRs � 6 OKR PIC � 13+ YRS</text>
+  <text x="884" y="41" text-anchor="end" class="mono arcade-cyan">CREDIT 99 // OPEN TO ROLES</text>
+
+  <!-- Hero Title Banner -->
+  <text x="460" y="88" text-anchor="middle" class="sans" fill="#FFFFFF" font-size="28" font-weight="900" letter-spacing="0.04em" filter="url(#arcadeGlow)">SENIOR FRONTEND BOSS RUSH</text>
+  <text x="460" y="110" text-anchor="middle" class="mono" fill="#B5A3D4" font-size="11.5">REACT 19 � NEXT.JS 16 � TYPESCRIPT � REPORTING SURFACES � MULTILINGUAL ADMIN PLATFORMS</text>
+
+  <!-- ======================================================================= -->
+  <!-- 4 BOSS FIGHT STAGES (Left & Center Grid)                                -->
+  <!-- ======================================================================= -->
+  <!-- STAGE 01: THE DRIFT HYDRA -->
+  <rect x="24" y="128" width="424" height="122" rx="8" fill="#130926" stroke="#00F5D4" stroke-width="1.5" />
+  <rect x="36" y="138" width="110" height="20" rx="3" fill="#00F5D4" />
+  <text x="91" y="152" text-anchor="middle" class="mono" fill="#090414" font-size="10" font-weight="800">STAGE 01 CLEAR</text>
+  <text x="158" y="152" class="sans arcade-white">THE SCORE DRIFT HYDRA (WPM-3469)</text>
+  <text x="434" y="152" text-anchor="end" class="mono arcade-cyan">+50,000 PTS</text>
+
+  <text x="36" y="176" class="sans" fill="#D8CEEB" font-size="11">Boss Attack: Dashboard (Metabase) vs Excel (Pandas) score drift.</text>
+  <rect x="36" y="186" width="400" height="52" rx="4" fill="#0A0416" stroke="#281642" />
+  <text x="46" y="204" class="mono" fill="#FF2A85" font-size="10.5" font-weight="700">COUNTEREXAMPLE HIT: 54.31 (Facility) != 54.90 (Question)</text>
+  <text x="46" y="220" class="mono" fill="#00F5D4" font-size="10.5" font-weight="700">FINISHER: Trino Card = Single Authority; Django only pivots</text>
+  <text x="46" y="233" class="mono" fill="#9A89B8" font-size="9.5">Combo: 43-ticket Engage Reporting OKR shipped 0.5 -&gt; 1.0</text>
+
+  <!-- STAGE 02: THE 84.5s BUILD GOLEM -->
+  <rect x="472" y="128" width="424" height="122" rx="8" fill="#130926" stroke="#FF2A85" stroke-width="1.5" />
+  <rect x="484" y="138" width="110" height="20" rx="3" fill="#FF2A85" />
+  <text x="539" y="152" text-anchor="middle" class="mono" fill="#FFFFFF" font-size="10" font-weight="800">STAGE 02 CLEAR</text>
+  <text x="606" y="152" class="sans arcade-white">THE 84.5s BUILD GOLEM (NEXT 16)</text>
+  <text x="882" y="152" text-anchor="end" class="mono arcade-hdr">2.08x SPEED</text>
+
+  <text x="484" y="176" class="sans" fill="#D8CEEB" font-size="11">Boss Attack: Barrel-file bloat &amp; slow Next.js production builds.</text>
+  <rect x="484" y="186" width="400" height="52" rx="4" fill="#0A0416" stroke="#281642" />
+  <text x="494" y="204" class="mono" fill="#FFE600" font-size="10.5" font-weight="700">BEFORE HP: [��������������������] 84.5s +/- 11.4s</text>
+  <text x="494" y="220" class="mono" fill="#00F5D4" font-size="10.5" font-weight="700">AFTER  HP: [��������������������] 40.6s (De-barrel + Next 16)</text>
+  <text x="494" y="233" class="mono" fill="#9A89B8" font-size="9.5">Bonus Stage: SolidJS 2 portfolio cutover -> 683ms / 29.02 kB gz</text>
+
+  <!-- STAGE 03: THE 350 KiB TROJAN BUNDLE -->
+  <rect x="24" y="262" width="424" height="122" rx="8" fill="#130926" stroke="#FFE600" stroke-width="1.5" />
+  <rect x="36" y="272" width="110" height="20" rx="3" fill="#FFE600" />
+  <text x="91" y="286" text-anchor="middle" class="mono" fill="#090414" font-size="10" font-weight="800">STAGE 03 PARRY</text>
+  <text x="158" y="286" class="sans arcade-white">THE 350 KiB EDITOR TROJAN</text>
+  <text x="434" y="286" text-anchor="end" class="mono arcade-hdr">VETO SHIELD</text>
+
+  <text x="36" y="310" class="sans" fill="#D8CEEB" font-size="11">Boss Attack: "Lighter" rich-text editor migration pitch.</text>
+  <rect x="36" y="320" width="400" height="52" rx="4" fill="#0A0416" stroke="#281642" />
+  <text x="46" y="338" class="mono" fill="#00F5D4" font-size="10.5" font-weight="700">KEPT WEAPON: MDXEditor -> 164 KiB gzip / 1.8 MiB install</text>
+  <text x="46" y="354" class="mono" fill="#FF2A85" font-size="10.5" font-weight="700">BLOCKED HIT: Candidate -> 350 KiB gzip / 10.1 MiB install</text>
+  <text x="46" y="367" class="mono" fill="#9A89B8" font-size="9.5">Rule: Test in an isolated worktree before buying a rewrite.</text>
+
+  <!-- STAGE 04: PR #155 SIX-BUG GAUNTLET -->
+  <rect x="472" y="262" width="424" height="122" rx="8" fill="#130926" stroke="#A855F7" stroke-width="1.5" />
+  <rect x="484" y="272" width="110" height="20" rx="3" fill="#A855F7" />
+  <text x="539" y="286" text-anchor="middle" class="mono" fill="#FFFFFF" font-size="10" font-weight="800">STAGE 04 GUARD</text>
+  <text x="606" y="286" class="sans arcade-white">PR #155 SIX-BUG GAUNTLET</text>
+  <text x="882" y="286" text-anchor="end" class="mono" fill="#C084FC" font-size="11" font-weight="700">6x COMBO</text>
+
+  <text x="484" y="310" class="sans" fill="#D8CEEB" font-size="11">Boss Attack: 6 production-breaking regressions hidden in Card 7 PR.</text>
+  <rect x="484" y="320" width="400" height="52" rx="4" fill="#0A0416" stroke="#281642" />
+  <text x="494" y="338" class="mono" fill="#FFE600" font-size="10" font-weight="700">[1] Brand gate broke facility card  [2] Swapped question_type 1&amp;3</text>
+  <text x="494" y="353" class="mono" fill="#00F5D4" font-size="10" font-weight="700">[3] Unsupported types coerced       [4] Valid API zeroed on guard</text>
+  <text x="494" y="367" class="mono" fill="#FF2A85" font-size="10" font-weight="700">[5] Stale client filter desync      [6] Repo-wide @ts-ignore</text>
+
+  <!-- ======================================================================= -->
+  <!-- BOTTOM UNLOCKED ARCADE CARTRIDGES & INSERT COIN                         -->
+  <!-- ======================================================================= -->
+  <rect x="24" y="396" width="872" height="44" rx="6" fill="#120826" stroke="#3B1E5E" />
+  <text x="38" y="415" class="mono arcade-cyan">PLAYABLE CARTRIDGES:</text>
+  <text x="195" y="415" class="mono" fill="#FFFFFF" font-size="10.5">sc-plus.vercel.app � qgenai.vercel.app � mcq.vishalk.com � printgrid.vishalk.com � pdfgrid.vishalk.com</text>
+  <text x="38" y="431" class="mono" fill="#B5A3D4" font-size="10">PUNJAB, INDIA (REMOTE) � AI-NATIVE WORKFLOW (CURSOR / CLAUDE CODE � 100% HUMAN REVIEWED &amp; OWNED)</text>
+  <text x="882" y="431" text-anchor="end" class="mono arcade-hdr coin-blink">PRESS START -&gt; VISHALK.COM</text>
+
+  <!-- Subtle CRT Scanline Overlay -->
+  <rect x="8" y="8" width="904" height="444" rx="12" fill="url(#scanlines)" pointer-events="none" />
+</svg>

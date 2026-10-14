@@ -1,49 +1,37 @@
-<div align="center">
-  <img src="./assets/architecture-board.svg" width="100%" alt="Vishal Kumar — Architecture & Decision Telemetry" />
-</div>
+<p align="center">
+  <a href="https://vishalk.com">
+    <img src="./assets/01-synth-telemetry-rack.svg" width="100%" alt="Vishal Kumar — Modular Synthesizer &amp; Oscilloscope Rack" />
+  </a>
+</p>
 
-<br />
-
-<div align="center">
-
-**[vishalk.com](https://vishalk.com)** · **[Resume (PDF)](https://vishalk.com/vishal-cv.pdf)** · **[LinkedIn](https://www.linkedin.com/in/vishalkdotcom)** · **[hello@vishalk.com](mailto:hello@vishalk.com)**
-
-</div>
-
----
-
-### Architectural Decisions & Proof Ledger
-
-| Problem Space | Engineering Call | Verified Outcome |
-| :--- | :--- | :--- |
-| **Dashboard ↔ Excel Score Drift**<br/><sub>Metabase / Trino / Django / Pandas</sub> | Built a Python + Trino counterexample harness proving facility-first vs. question-first averages diverged (`71.47` vs `71.40` across 2 facilities; `54.90` vs `54.31` across 8). Promoted analytics cards to single scoring authority. | **100% parity** across web dashboards and Excel exports |
-| **Next.js Production Build Bottleneck**<br/><sub>Next.js 16 / TypeScript / CI</sub> | Self-initiated 3-ticket cluster: Next.js 16 upgrade, barrel-file elimination, and CI lint/build caching. Benchmarked via `hyperfine` on an isolated machine. | **`84.5s → 40.6s`** (`2.08×` faster production build) |
-| **Rich-Text Editor Replacement Pitch**<br/><sub>Next.js Bundle Analysis</sub> | Built a production worktree bake-off before migrating. Measured candidate lazy chunk at `350 KiB` gzip (`10.1 MiB` install) vs. existing `MDXEditor` at `164 KiB` gzip (`1.8 MiB` install). | **Rejected migration** with reproducible bundle proof |
-| **State Management across Runtimes**<br/><sub>Redux Toolkit / Zustand / Jotai</sub> | Prototyped a real slice (`WPM-2255`). Found App Router per-request SSR store constraints negated Zustand's ergonomics on web—stayed on **RTK**. Migrated Jotai → **Zustand** on client-only **React Native** (`WPM-3132`). | Saved **7–13h** web churn; simplified mobile state |
-| **Multi-Select Survey Double Counting**<br/><sub>dbt / Trino / Custom Metabase Fork</sub> | Re-modeled survey marts at respondent grain with relational division (`OR` within field, `AND` across fields) + fast pre-aggregated mart for unfiltered loads; shipped 9 PRs to custom Metabase fork. | **Zero double-counting** + banker's rounding & SQL pivot |
-| **Multilingual Indicator Bank Sync**<br/><sub>Django / Next.js / OpenPyXL</sub> | Designed 4 admin surfaces + protected Excel round-trip templates with hidden stable IDs. Caught ambiguous lineage on `PK >= 10` during backfill and gated updates by association in 500-row atomic batches. | **45/45** regression tests green; zero orphan overwrites |
+<p align="center">
+  <a href="https://vishalk.com"><strong>vishalk.com</strong></a> ·
+  <a href="https://vishalk.com/work"><strong>Work Dossiers</strong></a> ·
+  <a href="https://vishalk.com/resume"><strong>Resume (PDF)</strong></a> ·
+  <a href="mailto:hello@vishalk.com"><strong>hello@vishalk.com</strong></a> ·
+  <a href="https://www.linkedin.com/in/vishalkdotcom"><strong>LinkedIn</strong></a>
+</p>
 
 ---
 
-### Live Systems & Open-Source Work
+### `PATCH NOTES // VERIFIED ARCHITECTURE SIGNALS`
 
-| System | Stack | What It Does | Links |
+| Patch | Signal | Counterexample / Benchmark Proof | Shipped Architecture |
 | :--- | :--- | :--- | :--- |
-| **SupplyChain+** | `Next.js 16` `React 19` `Drizzle` `pgvector` `AI SDK` | Explainable supplier-risk scoring, semantic complaint clustering, regulatory radar & multi-LLM audit assistant. | **[Live App ↗](https://sc-plus.vercel.app)** · [Source](https://github.com/vishalkdotcom/supplychain-plus) |
-| **PromptSurvey** | `Next.js 15` `React 19` `AI SDK` `Zod` `IndexedDB` | Prompt-to-survey generator with multi-type questions, per-question AI regeneration & multilingual translation. | **[Live App ↗](https://qgenai.vercel.app)** |
-| **Snap2Paper** | `React` `TypeScript` `Gemini Vision` `jsPDF` | Turns photographed exam papers into structured digital MCQs and print-ready PDF question sheets. | **[mcq.vishalk.com ↗](https://mcq.vishalk.com)** · [Source](https://github.com/vishalkdotcom/Snap2Paper) |
-| **PhotoGrid** | `TypeScript` `Canvas API` `Zero-Upload` | Client-side passport & ID photo sheet generator (A4 / 4×6) with precision crop and cut guides. | **[printgrid.vishalk.com ↗](https://printgrid.vishalk.com)** · [Source](https://github.com/vishalkdotcom/photogrid) |
-| **PDFGrid** | `TypeScript` `PDF-lib` `Web Workers` | Browser-local N-up PDF layout compiler—merges multi-page PDFs into compact grid sheets with zero server transfer. | **[pdfgrid.vishalk.com ↗](https://pdfgrid.vishalk.com)** · [Source](https://github.com/vishalkdotcom/pdfgrid) |
-| **April** | `Tauri 2` `Rust` `React 19` `SQLite` | Native desktop Story Point & Jira/GitHub PR tracker with incremental JQL watermarks and offline sync. | [Source](https://github.com/vishalkdotcom/april) |
-| **EduCal** | `Expo` `React Native` `Gemini Structured Output` | Mobile education cost planner with live currency conversion and 18 Maestro E2E verification flows. | [Source](https://github.com/vishalkdotcom/educal) |
-| **Agent Skills** | `TypeScript` `Playwright` `Prompt Engineering` | 44+ composable agent workflows (`grill-with-docs → to-spec → to-tickets → implement → code-review`). | [Source](https://github.com/vishalkdotcom/skills) |
-| **Dotfiles** | `Chezmoi` `PowerShell 7 AST` `Windows Terminal` | Declarative Windows workstation with AST-rewriting Unix coreutils translations and warm-ink terminal ergonomics. | [Source](https://github.com/vishalkdotcom/dotfiles) |
+| **`CH-01`** | **One Scoring Authority** (`WPM-3469`) | Proved `facility-first` (**54.31**) vs `question-first` (**54.90**) diverged across 8 unequal-volume sites (**71.47 vs 71.40** on 2 sites). | Trino/Metabase cards became the single scoring authority; Django validates, pivots, and writes XLS with zero duplicate math. |
+| **`CH-02`** | **Next.js 16 + De-Barrel** (`WPM-3019`) | Quiet-machine `hyperfine` production build: **`84.5s ± 11.4s → 40.6s`** (**2.08× faster**). | Self-initiated Next.js 16 upgrade, barrel-file removal, and cached CI pipeline alongside legacy CRA. |
+| **`CH-03`** | **The Confident "No"** (`WPM-3487`) | Isolated worktree production build: candidate emitted **350 KiB gzip** (**10.1 MiB** install) vs MDXEditor's **164 KiB gzip** (**1.8 MiB**). | Vetoed the rewrite when real build output contradicted the "lighter alternative" pitch. |
+| **`CH-04`** | **Context-Driven State** | Same engineer, two runtimes, opposite calls: Next.js SSR per-request store negated Zustand DX vs React Native client runtime. | Kept **Redux Toolkit** on Next.js web; adopted **Zustand** on the React Native Moodle/SCORM POC. |
+| **`CH-05`** | **Review Gatekeeper** (`PR #155`) | Caught **6 merge-blocking bugs** on Card 7 migration (brand-only score lock, swapped `question_type` `1` & `3`, zeroed API guard, stale client filter, repo-wide `@ts-ignore`). | Delivered file/line-referenced merge checklist inside the 43-ticket Engage Reporting OKR (`0.5 → 1.0`). |
 
-<!--
-  README Variants included in this repo:
-  - variants/01-architecture-telemetry.md (Active Default)
-  - variants/02-editorial-broadsheet.md
-  - variants/03-terminal-session.md
-  - variants/04-quiet-ledger.md
-  Swap anytime: cp variants/02-editorial-broadsheet.md README.md
--->
+---
+
+### `SEQUENCER PADS // LIVE STOREFRONTS & PRODUCTION DOSSIERS`
+
+| Pad | Surface | Stack | Access |
+| :--- | :--- | :--- | :--- |
+| **`PAD-01`** | **SupplyChain+** — Explainable supplier-risk scoring, complaint clustering & audit export | `Next.js 16` `React 19` `pgvector` `Drizzle` `Vercel AI SDK` | [**sc-plus.vercel.app →**](https://sc-plus.vercel.app) |
+| **`PAD-02`** | **PromptSurvey** — Prompt-to-survey builder, per-question AI regen & multilingual translation | `Next.js 15` `React 19` `Vercel AI SDK` `Zod` `IndexedDB` | [**qgenai.vercel.app →**](https://qgenai.vercel.app) |
+| **`PAD-03`** | **Snap2Paper · PhotoGrid · PDFGrid** — Local-first vision MCQ digitizer, passport layout & N-up PDF compiler | `TypeScript` `Gemini Vision` `Canvas` `Client-side PDF` | [**mcq**](https://mcq.vishalk.com/) · [**printgrid**](https://printgrid.vishalk.com/) · [**pdfgrid**](https://pdfgrid.vishalk.com/) |
+| **`PAD-04`** | **Engage Reporting & Multilingual Indicator Bank** *(Labor Solutions)* | `Next.js` `React` `TypeScript` `Metabase SDK` `Django` `Trino` | [**Case Dossiers on vishalk.com →**](https://vishalk.com/work) |
+| **`PAD-05`** | **Model Deployment Framework & Store KPIs** *(Advance Auto Parts)* | `Next.js` `TypeScript` `Tremor/Nivo` `Snowflake` `Streamlit` | [**Case Dossiers on vishalk.com →**](https://vishalk.com/work) |

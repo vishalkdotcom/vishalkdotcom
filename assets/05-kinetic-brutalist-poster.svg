@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" width="100%" role="img" aria-label="Vishal Kumar - Kinetic Brutalist Poster">
+  <title>Vishal Kumar -- Senior Frontend Engineer // Kinetic Brutalist Edition</title>
+  <style>
+    .bg { fill: #F4F0E6; }
+    .ink { fill: #111110; }
+    .muted { fill: #4E4C46; }
+    .vermilion { fill: #E63926; }
+    .cobalt { fill: #1746A2; }
+    .emerald { fill: #157F3D; }
+    .card { fill: #ECE7DA; stroke: #111110; stroke-width: 2; }
+    .rule-heavy { stroke: #111110; stroke-width: 3; }
+    .rule-mid { stroke: #111110; stroke-width: 1.5; }
+    .sans { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0E0E0D; }
+      .ink { fill: #F4F0E6; }
+      .muted { fill: #A6A298; }
+      .vermilion { fill: #FF543E; }
+      .cobalt { fill: #5E9BFF; }
+      .emerald { fill: #3AD97A; }
+      .card { fill: #171715; stroke: #F4F0E6; stroke-width: 1.5; }
+      .rule-heavy { stroke: #F4F0E6; stroke-width: 2.5; }
+      .rule-mid { stroke: #F4F0E6; stroke-width: 1.25; }
+    }
+  </style>
+
+  <!-- Outer Poster Canvas -->
+  <rect x="0" y="0" width="920" height="450" rx="8" class="bg" />
+  <rect x="12" y="12" width="896" height="426" fill="none" class="rule-heavy" />
+
+  <!-- Top Swiss Registration Bar -->
+  <text x="28" y="36" class="mono ink" font-size="11" font-weight="800" letter-spacing="0.14em">ISSUE 2026 // PUNJAB, IN (REMOTE)</text>
+  <text x="460" y="36" text-anchor="middle" class="mono vermilion" font-size="11" font-weight="800" letter-spacing="0.14em">� OPEN TO SENIOR FRONTEND ROLES</text>
+  <text x="892" y="36" text-anchor="end" class="mono ink" font-size="11" font-weight="800" letter-spacing="0.1em">VISHALK.COM // HELLO@VISHALK.COM</text>
+  <line x1="12" y1="48" x2="908" y2="48" class="rule-heavy" />
+
+  <!-- Monumental Hero Display Type -->
+  <text x="24" y="128" class="sans ink" font-size="82" font-weight="900" letter-spacing="-0.045em">VISHAL KUMAR</text>
+  <rect x="688" y="64" width="204" height="72" class="vermilion" />
+  <text x="790" y="96" text-anchor="middle" class="mono" fill="#FFFFFF" font-size="18" font-weight="900" letter-spacing="0.06em">13+ YEARS</text>
+  <text x="790" y="118" text-anchor="middle" class="mono" fill="#FFFFFF" font-size="11" font-weight="700">7+ YRS REACT &amp; NEXT.JS</text>
+
+  <text x="28" y="156" class="sans muted" font-size="15.5" font-weight="700">Senior Frontend Engineer -- Complex Reporting Surfaces, Multilingual Admin Platforms &amp; Evidence-Led Architecture</text>
+  <line x1="12" y1="172" x2="908" y2="172" class="rule-heavy" />
+
+  <!-- 4 Monumental Brutalist Proof Columns -->
+  <!-- Column 01 -->
+  <text x="28" y="198" class="mono vermilion" font-size="11" font-weight="800">01 // SCORE AUTHORITY</text>
+  <text x="28" y="244" class="sans ink" font-size="44" font-weight="900" letter-spacing="-0.04em">54.90</text>
+  <text x="158" y="244" class="mono vermilion" font-size="15" font-weight="800">!= 54.31</text>
+  <text x="28" y="268" class="sans ink" font-size="12.5" font-weight="700">Proved 8-Facility Drift</text>
+  <text x="28" y="286" class="sans muted" font-size="11">Made Trino/Metabase cards the</text>
+  <text x="28" y="301" class="sans muted" font-size="11">single authority; Django pivots</text>
+  <text x="28" y="316" class="sans muted" font-size="11">into XLS with zero duplicate math.</text>
+
+  <line x1="236" y1="172" x2="236" y2="340" class="rule-mid" />
+
+  <!-- Column 02 -->
+  <text x="252" y="198" class="mono cobalt" font-size="11" font-weight="800">02 // BUILD VELOCITY</text>
+  <text x="252" y="244" class="sans ink" font-size="44" font-weight="900" letter-spacing="-0.04em">2.08�</text>
+  <text x="380" y="244" class="mono emerald" font-size="14" font-weight="800">40.6s</text>
+  <text x="252" y="268" class="sans ink" font-size="12.5" font-weight="700">Down from 84.5s Baseline</text>
+  <text x="252" y="286" class="sans muted" font-size="11">Self-initiated Next.js 16 upgrade,</text>
+  <text x="252" y="301" class="sans muted" font-size="11">barrel-file removal, and cached</text>
+  <text x="252" y="316" class="sans muted" font-size="11">CI pipeline verified via hyperfine.</text>
+
+  <line x1="460" y1="172" x2="460" y2="340" class="rule-mid" />
+
+  <!-- Column 03 -->
+  <text x="476" y="198" class="mono emerald" font-size="11" font-weight="800">03 // CONFIDENT VETO</text>
+  <text x="476" y="244" class="sans ink" font-size="44" font-weight="900" letter-spacing="-0.04em">164</text>
+  <text x="562" y="244" class="mono vermilion" font-size="14" font-weight="800">vs 350 KiB</text>
+  <text x="476" y="268" class="sans ink" font-size="12.5" font-weight="700">Isolated Worktree Bake-Off</text>
+  <text x="476" y="286" class="sans muted" font-size="11">Rejected an editor rewrite after</text>
+  <text x="476" y="301" class="sans muted" font-size="11">proving candidate doubled lazy</text>
+  <text x="476" y="316" class="sans muted" font-size="11">gzip JS &amp; 5.6x install footprint.</text>
+
+  <line x1="684" y1="172" x2="684" y2="340" class="rule-mid" />
+
+  <!-- Column 04 -->
+  <text x="700" y="198" class="mono vermilion" font-size="11" font-weight="800">04 // REVIEW GATE</text>
+  <text x="700" y="244" class="sans ink" font-size="44" font-weight="900" letter-spacing="-0.04em">6 BUGS</text>
+  <text x="700" y="268" class="sans ink" font-size="12.5" font-weight="700">Blocked Before Merge (PR #155)</text>
+  <text x="700" y="286" class="sans muted" font-size="11">Caught brand-only score lock,</text>
+  <text x="700" y="301" class="sans muted" font-size="11">swapped question_type 1&amp;3, and</text>
+  <text x="700" y="316" class="sans muted" font-size="11">zeroed API payload guard.</text>
+
+  <line x1="12" y1="340" x2="908" y2="340" class="rule-heavy" />
+
+  <!-- Bottom Live Storefronts & Dossiers Strip -->
+  <text x="28" y="366" class="mono vermilion" font-size="10.5" font-weight="800">SHIPPED WORK //</text>
+  <text x="148" y="366" class="sans ink" font-size="12" font-weight="800">Engage Reporting (43-ticket OKR) � Multilingual Indicator Bank � Advance Auto Parts ML Hosting &amp; Store KPIs</text>
+
+  <text x="28" y="392" class="mono cobalt" font-size="10.5" font-weight="800">LIVE DEMOS   //</text>
+  <text x="148" y="392" class="mono ink" font-size="11.5" font-weight="700">SupplyChain+ (sc-plus.vercel.app) � PromptSurvey (qgenai.vercel.app) � Snap2Paper � PhotoGrid � PDFGrid</text>
+
+  <line x1="12" y1="406" x2="908" y2="406" class="rule-mid" />
+  <text x="28" y="426" class="mono muted" font-size="10.5" font-weight="700">STACK: REACT 19 � NEXT.JS 16 � TYPESCRIPT � SOLIDJS 2 � REDUX TOOLKIT � ZUSTAND � PLAYWRIGHT � METABASE SDK � DJANGO � DBT/TRINO</text>
+</svg>

@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="100%" role="img" aria-label="Vishal Kumar - Constellation of Proof Star Map">
+  <title>Vishal Kumar -- Senior Frontend Engineer // Constellation Observatory</title>
+  <defs>
+    <radialGradient id="deepSpace" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="55%" stop-color="#080D1A" />
+      <stop offset="100%" stop-color="#03060C" />
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    .grid-ring { fill: none; stroke: #1E293B; stroke-width: 1; stroke-dasharray: 4 6; }
+    .axis-line { stroke: #1E293B; stroke-width: 0.8; }
+    .constellation-line { fill: none; stroke: #38BDF8; stroke-width: 1.2; stroke-opacity: 0.45; }
+    .constellation-gold { fill: none; stroke: #F59E0B; stroke-width: 1.2; stroke-opacity: 0.5; stroke-dasharray: 3 3; }
+    .constellation-emerald { fill: none; stroke: #10B981; stroke-width: 1.2; stroke-opacity: 0.5; }
+    .hud-label { fill: #64748B; font-size: 9.5px; letter-spacing: 0.14em; font-weight: 600; }
+    .star-title { fill: #F8FAFC; font-size: 12px; font-weight: 700; }
+    .star-sub { fill: #94A3B8; font-size: 10px; }
+    .star-metric { fill: #38BDF8; font-size: 10px; font-weight: 700; }
+
+    @keyframes slowPulse {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.18); opacity: 0.45; }
+    }
+    .pulse-ring { transform-origin: center; transform-box: fill-box; animation: slowPulse 4s infinite ease-in-out; }
+  </style>
+
+  <!-- Deep Space Canvas -->
+  <rect x="0" y="0" width="920" height="480" rx="14" fill="url(#deepSpace)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Subtle Background Field Stars -->
+  <g fill="#475569" opacity="0.6">
+    <circle cx="80" cy="70" r="1" /><circle cx="145" cy="190" r="1.2" /><circle cx="60" cy="340" r="1" />
+    <circle cx="230" cy="80" r="1.5" /><circle cx="340" cy="50" r="1" /><circle cx="580" cy="55" r="1.2" />
+    <circle cx="710" cy="90" r="1" /><circle cx="850" cy="140" r="1.4" /><circle cx="830" cy="310" r="1" />
+    <circle cx="760" cy="420" r="1.2" /><circle cx="540" cy="435" r="1" /><circle cx="290" cy="420" r="1.3" />
+  </g>
+
+  <!-- Celestial Astrolabe Rings Centered at (460, 250) -->
+  <circle cx="460" cy="250" r="210" fill="url(#coreGlow)" />
+  <circle cx="460" cy="250" r="95" class="grid-ring" />
+  <circle cx="460" cy="250" r="175" class="grid-ring" />
+  <circle cx="460" cy="250" r="255" class="grid-ring" />
+  <line x1="20" y1="250" x2="900" y2="250" class="axis-line" />
+  <line x1="460" y1="36" x2="460" y2="444" class="axis-line" />
+
+  <!-- Top Observatory HUD Bar -->
+  <rect x="16" y="14" width="888" height="28" rx="6" fill="#090E1A" stroke="#1E293B" />
+  <circle cx="32" cy="28" r="4" fill="#10B981" filter="url(#starGlow)" />
+  <text x="44" y="32" class="mono hud-label" fill="#E2E8F0">OBSERVATORY // VISHAL KUMAR � RA 30� 54' N � DEC 75� 51' E (PUNJAB, IN � REMOTE)</text>
+  <text x="890" y="32" text-anchor="end" class="mono" fill="#38BDF8" font-size="10" font-weight="700">13+ YRS � 7+ REACT/NEXT</text>
+
+  <!-- ======================================================================= -->
+  <!-- CONSTELLATION PATHS                                                     -->
+  <!-- ======================================================================= -->
+  <!-- Sector I: Reporting & Data Authority (North-West Cyan Constellation) -->
+  <path d="M 460 250 L 250 130 L 115 105 M 250 130 L 145 215" class="constellation-line" />
+
+  <!-- Sector II: Platform Velocity & Architecture (North-East Amber Constellation) -->
+  <path d="M 460 250 L 675 130 L 800 95 M 675 130 L 790 210" class="constellation-gold" />
+
+  <!-- Sector III: AI & Local-First Tools (South-East Emerald Constellation) -->
+  <path d="M 460 250 L 685 355 L 805 325 M 685 355 L 790 410" class="constellation-emerald" />
+
+  <!-- Sector IV: Enterprise ML & Store KPIs (South-West Violet Constellation) -->
+  <path d="M 460 250 L 245 360 L 115 335 M 245 360 L 135 415" fill="none" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.5" />
+
+  <!-- ======================================================================= -->
+  <!-- SECTOR I NODES: REPORTING & SCORE AUTHORITY (North-West)                -->
+  <!-- ======================================================================= -->
+  <text x="32" y="68" class="mono hud-label" fill="#38BDF8">SECTOR I // REPORTING &amp; SCORE PARITY</text>
+
+  <!-- Star 1A: Engage Reporting -->
+  <g transform="translate(250, 130)">
+    <circle cx="0" cy="0" r="12" fill="#38BDF8" opacity="0.2" class="pulse-ring" />
+    <circle cx="0" cy="0" r="5.5" fill="#38BDF8" filter="url(#starGlow)" />
+    <rect x="-12" y="12" width="175" height="44" rx="4" fill="#0B1324" stroke="#1E3A5F" opacity="0.95" />
+    <text x="-4" y="27" class="sans star-title">Engage Survey Reporting</text>
+    <text x="-4" y="40" class="mono star-metric">43 Tickets � OKR 0.5 -> 1.0</text>
+    <text x="-4" y="51" class="mono star-sub">Metabase SDK � Risk Maps</text>
+  </g>
+
+  <!-- Star 1B: Score Parity Proof -->
+  <g transform="translate(115, 105)">
+    <circle cx="0" cy="0" r="4.5" fill="#38BDF8" />
+    <text x="-85" y="-12" class="mono star-metric">54.90 vs 54.31 Drift Proof</text>
+    <text x="-85" y="2" class="sans star-sub">1 Scoring Authority (Trino -> XLS)</text>
+  </g>
+
+  <!-- Star 1C: Indicator Bank -->
+  <g transform="translate(145, 215)">
+    <circle cx="0" cy="0" r="4.5" fill="#38BDF8" />
+    <text x="-115" y="-4" class="sans star-title">Multilingual Indicator Bank</text>
+    <text x="-115" y="10" class="mono star-sub">Django + Next.js � 4 Admin Surfaces</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- SECTOR II NODES: PLATFORM VELOCITY & RIGOR (North-East)                 -->
+  <!-- ======================================================================= -->
+  <text x="888" y="68" text-anchor="end" class="mono hud-label" fill="#F59E0B">SECTOR II // BENCHMARKS &amp; JUDGMENT</text>
+
+  <!-- Star 2A: Next.js 16 Build Velocity -->
+  <g transform="translate(675, 130)">
+    <circle cx="0" cy="0" r="12" fill="#F59E0B" opacity="0.2" class="pulse-ring" />
+    <circle cx="0" cy="0" r="5.5" fill="#F59E0B" filter="url(#starGlow)" />
+    <rect x="-80" y="12" width="182" height="44" rx="4" fill="#17130B" stroke="#5C4013" opacity="0.95" />
+    <text x="-72" y="27" class="sans star-title">Next.js 16 + De-Barrel</text>
+    <text x="-72" y="40" class="mono" fill="#FBBF24" font-size="10" font-weight="700">84.5s -> 40.6s (2.08x build)</text>
+    <text x="-72" y="51" class="mono star-sub">Self-initiated CI/build win</text>
+  </g>
+
+  <!-- Star 2B: Editor Bake-Off Veto -->
+  <g transform="translate(800, 95)">
+    <circle cx="0" cy="0" r="4.5" fill="#F59E0B" />
+    <text x="90" y="-12" text-anchor="end" class="mono" fill="#FBBF24" font-size="10" font-weight="700">164 KiB vs 350 KiB Veto</text>
+    <text x="90" y="2" text-anchor="end" class="sans star-sub">Kept MDXEditor via worktree test</text>
+  </g>
+
+  <!-- Star 2C: PR #155 Review Gate -->
+  <g transform="translate(790, 210)">
+    <circle cx="0" cy="0" r="4.5" fill="#F59E0B" />
+    <text x="100" y="-4" text-anchor="end" class="sans star-title">PR #155 Review Gate</text>
+    <text x="100" y="10" text-anchor="end" class="mono star-sub">6 Merge-Blocking Bugs Caught</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- SECTOR III NODES: LIVE AI & LOCAL-FIRST TOOLS (South-East)              -->
+  <!-- ======================================================================= -->
+  <text x="888" y="282" text-anchor="end" class="mono hud-label" fill="#10B981">SECTOR III // LIVE PUBLIC STOREFRONTS</text>
+
+  <!-- Star 3A: SupplyChain+ & PromptSurvey -->
+  <g transform="translate(685, 355)">
+    <circle cx="0" cy="0" r="12" fill="#10B981" opacity="0.2" class="pulse-ring" />
+    <circle cx="0" cy="0" r="5.5" fill="#10B981" filter="url(#starGlow)" />
+    <rect x="-85" y="-58" width="185" height="44" rx="4" fill="#081C17" stroke="#155E4B" opacity="0.95" />
+    <text x="-77" y="-43" class="sans star-title">SupplyChain+ &amp; PromptSurvey</text>
+    <text x="-77" y="-30" class="mono" fill="#34D399" font-size="10" font-weight="700">sc-plus &amp; qgenai .vercel.app</text>
+    <text x="-77" y="-19" class="mono star-sub">Next 16 � pgvector � Vercel AI SDK</text>
+  </g>
+
+  <!-- Star 3B: Snap2Paper -->
+  <g transform="translate(805, 325)">
+    <circle cx="0" cy="0" r="4.5" fill="#10B981" />
+    <text x="85" y="-4" text-anchor="end" class="sans star-title">Snap2Paper (mcq.vishalk.com)</text>
+    <text x="85" y="10" text-anchor="end" class="mono star-sub">Gemini Vision -> Local MCQ PDF</text>
+  </g>
+
+  <!-- Star 3C: PhotoGrid & PDFGrid -->
+  <g transform="translate(790, 410)">
+    <circle cx="0" cy="0" r="4.5" fill="#10B981" />
+    <text x="100" y="-4" text-anchor="end" class="sans star-title">PhotoGrid &amp; PDFGrid</text>
+    <text x="100" y="10" text-anchor="end" class="mono star-sub">On-Device Canvas &amp; N-Up PDF</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- SECTOR IV NODES: ENTERPRISE ML & STORE KPIs (South-West)                -->
+  <!-- ======================================================================= -->
+  <text x="32" y="282" class="mono hud-label" fill="#C084FC">SECTOR IV // ADVANCE AUTO PARTS ML &amp; KPI</text>
+
+  <!-- Star 4A: Model Deployment Framework -->
+  <g transform="translate(245, 360)">
+    <circle cx="0" cy="0" r="12" fill="#A855F7" opacity="0.2" class="pulse-ring" />
+    <circle cx="0" cy="0" r="5.5" fill="#C084FC" filter="url(#starGlow)" />
+    <rect x="-15" y="-58" width="185" height="44" rx="4" fill="#160D24" stroke="#4C2878" opacity="0.95" />
+    <text x="-7" y="-43" class="sans star-title">Model Deployment Framework</text>
+    <text x="-7" y="-30" class="mono" fill="#C084FC" font-size="10" font-weight="700">Self-Serve ML Hosting UI</text>
+    <text x="-7" y="-19" class="mono star-sub">Next.js � TypeScript � Tailwind</text>
+  </g>
+
+  <!-- Star 4B: Measurement Framework -->
+  <g transform="translate(115, 335)">
+    <circle cx="0" cy="0" r="4.5" fill="#C084FC" />
+    <text x="-85" y="-4" class="sans star-title">Store Measurement UI</text>
+    <text x="-85" y="10" class="mono star-sub">Next.js � Tremor/Nivo � Snowflake</text>
+  </g>
+
+  <!-- Star 4C: Store Forecast Dashboard -->
+  <g transform="translate(135, 415)">
+    <circle cx="0" cy="0" r="4.5" fill="#C084FC" />
+    <text x="-105" y="-4" class="sans star-title">Project Phoenix Forecast SPA</text>
+    <text x="-105" y="10" class="mono star-sub">Actual vs Predicted Net Sales</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- CENTER SUN: VISHAL KUMAR CORE IDENTITY (460, 250)                       -->
+  <!-- ======================================================================= -->
+  <g transform="translate(460, 250)">
+    <circle cx="0" cy="0" r="54" fill="#0B1325" stroke="#38BDF8" stroke-width="2" filter="url(#starGlow)" />
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#1E3A5F" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="0" y="-12" text-anchor="middle" class="serif" fill="#FFFFFF" font-size="17" font-weight="700">VISHAL</text>
+    <text x="0" y="6" text-anchor="middle" class="serif" fill="#FFFFFF" font-size="17" font-weight="700">KUMAR</text>
+    <text x="0" y="23" text-anchor="middle" class="mono" fill="#38BDF8" font-size="9" font-weight="700">vishalk.com</text>
+  </g>
+
+  <!-- Bottom Telemetry Legend Bar -->
+  <rect x="16" y="440" width="888" height="26" rx="6" fill="#090E1A" stroke="#1E293B" />
+  <text x="30" y="457" class="mono" fill="#94A3B8" font-size="10">AI-NATIVE DELIVERY (REVIEWED, TESTED, OWNED) � SOLIDJS 2 PORTFOLIO: 683ms BUILD / 29.02 kB GZIP</text>
+  <text x="890" y="457" text-anchor="end" class="mono" fill="#10B981" font-size="10" font-weight="700">hello@vishalk.com -&gt;</text>
+</svg>
