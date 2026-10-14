@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" width="100%" role="img" aria-label="Vishal Kumar  Architecture Decision & Telemetry Board">
-  <title>Vishal Kumar  Senior Frontend Engineer (React / Next.js · Product UI · AI-Native Delivery)</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" width="100%" role="img" aria-label="Vishal Kumar - Architecture Decision and Telemetry Board">
+  <title>Vishal Kumar - Senior Frontend Engineer (React / Next.js | Product UI | AI-Native Delivery)</title>
   <style>
     .bg { fill: #f8f7f4; }
     .panel { fill: #ffffff; stroke: #dcd9d0; stroke-width: 1; }
@@ -61,10 +61,10 @@
   <line class="rule" x1="1" y1="36" x2="879" y2="36" />
   <circle class="ok" cx="20" cy="19" r="4" />
   <text class="mono fg-strong" x="32" y="23" font-size="11" font-weight="600" letter-spacing="0.06em">VISHAL KUMAR // SYSTEM SPECIFICATION REV 2026.10</text>
-  <text class="mono fg-muted" x="862" y="23" font-size="11" text-anchor="end">PUNJAB, IN · REMOTE · 13+ YRS (7+ REACT/NEXT)</text>
+  <text class="mono fg-muted" x="862" y="23" font-size="11" text-anchor="end">PUNJAB, IN  |  REMOTE  |  13+ YRS (7+ REACT/NEXT)</text>
 
   <!-- Headline Identity Strip -->
-  <text class="sans fg-strong" x="24" y="72" font-size="24" font-weight="700" letter-spacing="-0.02em">Senior Frontend Engineer  Product UI, Reporting &amp; Platform</text>
+  <text class="sans fg-strong" x="24" y="72" font-size="24" font-weight="700" letter-spacing="-0.02em">Senior Frontend Engineer - Product UI, Reporting &amp; Platform</text>
   <text class="sans fg-body" x="24" y="95" font-size="13.5">Complex reporting surfaces, multilingual form/admin workflows, and architecture decisions backed by counterexamples &amp; build benchmarks.</text>
 
   <!-- Status Pill -->
@@ -76,44 +76,44 @@
 
   <!-- THREE-COLUMN ARCHITECTURE SPEC GRID -->
   <!-- Column 1: Single Scoring Authority (x: 0..293) -->
-  <text class="mono accent" x="24" y="138" font-size="10.5" font-weight="600" letter-spacing="0.08em">01 / INVARIANT · SCORE PARITY</text>
+  <text class="mono accent" x="24" y="138" font-size="10.5" font-weight="600" letter-spacing="0.08em">01 / INVARIANT : SCORE PARITY</text>
   <text class="sans fg-strong" x="24" y="160" font-size="15" font-weight="700">One Scoring Authority</text>
   <text class="sans fg-muted" x="24" y="178" font-size="11.5">Proved question-first vs facility-first diverged:</text>
 
   <!-- Counterexample Proof Box -->
   <rect class="panel" x="24" y="190" width="245" height="68" rx="4" />
   <text class="mono fg-muted" x="34" y="208" font-size="10">COUNTEREXAMPLE (8 FACILITIES)</text>
-  <text class="mono reject" x="34" y="226" font-size="11" font-weight="600">XLS Question-First : 54.90  [DRIFT]</text>
-  <text class="mono ok" x="34" y="244" font-size="11" font-weight="600">Trino Facility-First: 54.31  [AUTH]</text>
+  <text class="mono ok" x="34" y="226" font-size="11" font-weight="600">Trino Question-First: 54.90 [AUTH]</text>
+  <text class="mono reject" x="34" y="244" font-size="11" font-weight="600">Excel Facility-First: 54.31 [DRIFT]</text>
 
   <!-- Pipeline Flow -->
   <text class="mono fg-muted" x="24" y="278" font-size="10">UNIFIED PIPELINE</text>
   <rect class="panel" x="24" y="286" width="52" height="22" rx="3" />
   <text class="mono fg-strong" x="50" y="301" font-size="10" text-anchor="middle">Trino</text>
-  <text class="mono fg-faint" x="83" y="301" font-size="10">’</text>
-  <rect class="panel" x="92" y="286" width="66" height="22" rx="3" />
-  <text class="mono fg-strong" x="125" y="301" font-size="10" text-anchor="middle">Metabase</text>
-  <text class="mono fg-faint" x="165" y="301" font-size="10">’</text>
-  <rect class="panel" x="174" y="286" width="95" height="22" rx="3" />
-  <text class="mono accent" x="221" y="301" font-size="10" font-weight="600" text-anchor="middle">UI + XLS Parity</text>
+  <text class="mono fg-faint" x="80" y="301" font-size="10">-&gt;</text>
+  <rect class="panel" x="94" y="286" width="66" height="22" rx="3" />
+  <text class="mono fg-strong" x="127" y="301" font-size="10" text-anchor="middle">Metabase</text>
+  <text class="mono fg-faint" x="163" y="301" font-size="10">-&gt;</text>
+  <rect class="panel" x="176" y="286" width="93" height="22" rx="3" />
+  <text class="mono accent" x="222" y="301" font-size="10" font-weight="600" text-anchor="middle">UI + XLS Parity</text>
   <text class="sans fg-muted" x="24" y="328" font-size="11">Django validates &amp; pivots; zero duplicate math.</text>
 
   <!-- Vertical Divider 1 -->
   <line class="rule" x1="293" y1="114" x2="293" y2="344" />
 
   <!-- Column 2: Build & Bundle Benchmarks (x: 293..586) -->
-  <text class="mono accent" x="315" y="138" font-size="10.5" font-weight="600" letter-spacing="0.08em">02 / BENCHMARK · BUILD &amp; BUNDLE</text>
+  <text class="mono accent" x="315" y="138" font-size="10.5" font-weight="600" letter-spacing="0.08em">02 / BENCHMARK : BUILD &amp; BUNDLE</text>
   <text class="sans fg-strong" x="315" y="160" font-size="15" font-weight="700">Measured Platform Wins</text>
   <text class="sans fg-muted" x="315" y="178" font-size="11.5">Next.js 16 + barrel removal (hyperfine):</text>
 
   <!-- Build Time Bars -->
   <text class="mono fg-muted" x="315" y="198" font-size="10">PROD BUILD (dev baseline)</text>
-  <text class="mono fg-body" x="564" y="198" font-size="10" text-anchor="end">84.5s ± 11.4s</text>
+  <text class="mono fg-body" x="564" y="198" font-size="10" text-anchor="end">84.5s +/- 11.4s</text>
   <rect class="bar-track" x="315" y="203" width="249" height="8" rx="2" />
   <rect class="bar-fill-old" x="315" y="203" width="249" height="8" rx="2" />
 
   <text class="mono fg-strong" x="315" y="227" font-size="10" font-weight="600">AFTER (Next 16 + De-barrel)</text>
-  <text class="mono ok" x="564" y="227" font-size="10" font-weight="600" text-anchor="end">40.6s (2.08× faster)</text>
+  <text class="mono ok" x="564" y="227" font-size="10" font-weight="600" text-anchor="end">40.6s (2.08x faster)</text>
   <rect class="bar-track" x="315" y="232" width="249" height="8" rx="2" />
   <rect class="bar-fill-ok" x="315" y="232" width="120" height="8" rx="2" />
 
@@ -133,27 +133,27 @@
   <line class="rule" x1="586" y1="114" x2="586" y2="344" />
 
   <!-- Column 3: Architecture Calls & Review Gate (x: 586..880) -->
-  <text class="mono accent" x="608" y="138" font-size="10.5" font-weight="600" letter-spacing="0.08em">03 / JUDGMENT · ARCHITECTURE</text>
+  <text class="mono accent" x="608" y="138" font-size="10.5" font-weight="600" letter-spacing="0.08em">03 / JUDGMENT : ARCHITECTURE</text>
   <text class="sans fg-strong" x="608" y="160" font-size="15" font-weight="700">Context-Driven Decisions</text>
   <text class="sans fg-muted" x="608" y="178" font-size="11.5">Same question, two runtimes, opposite calls:</text>
 
   <rect class="panel" x="608" y="190" width="248" height="36" rx="4" />
-  <text class="mono fg-strong" x="618" y="206" font-size="10.5" font-weight="600">Next.js SSR/Hybrid ’ Keep RTK</text>
+  <text class="mono fg-strong" x="618" y="206" font-size="10.5" font-weight="600">Next.js SSR/Hybrid -&gt; Keep RTK</text>
   <text class="sans fg-muted" x="618" y="220" font-size="10.5">Per-request store negated Zustand DX gain</text>
 
   <rect class="panel" x="608" y="232" width="248" height="36" rx="4" />
-  <text class="mono ok" x="618" y="248" font-size="10.5" font-weight="600">React Native Client ’ Zustand</text>
+  <text class="mono ok" x="618" y="248" font-size="10.5" font-weight="600">React Native Client -&gt; Zustand</text>
   <text class="sans fg-muted" x="618" y="262" font-size="10.5">Client-only runtime unlocked clean slices</text>
 
   <rect class="panel" x="608" y="276" width="248" height="54" rx="4" />
   <text class="mono warn" x="618" y="293" font-size="10" font-weight="600">REVIEW GATE &amp; DELIVERY</text>
   <text class="sans fg-body" x="618" y="309" font-size="11">6 merge-blocking bugs caught on Card 7 PR</text>
-  <text class="mono fg-muted" x="618" y="323" font-size="10">PIC on 6 OKRs · 124 PRs across 6 repos</text>
+  <text class="mono fg-muted" x="618" y="323" font-size="10">PIC on 6 OKRs | 124 PRs across 6 repos</text>
 
   <!-- Bottom Footer Strip -->
   <line class="rule" x1="1" y1="344" x2="879" y2="344" />
   <rect class="panel-header" x="2" y="345" width="876" height="43" rx="6" />
   <text class="mono fg-strong" x="24" y="371" font-size="11" font-weight="600">STACK //</text>
-  <text class="mono fg-body" x="86" y="371" font-size="11">React 19 · Next.js 16 · TypeScript · SolidJS · Tailwind · Playwright · Metabase SDK · Django · dbt/Trino</text>
-  <text class="mono accent" x="856" y="371" font-size="11" font-weight="600" text-anchor="end">vishalk.com ’</text>
+  <text class="mono fg-body" x="86" y="371" font-size="11">React 19 | Next.js 16 | TypeScript | SolidJS | Tailwind | Playwright | Metabase SDK | Django | dbt/Trino</text>
+  <text class="mono accent" x="856" y="371" font-size="11" font-weight="600" text-anchor="end">vishalk.com -&gt;</text>
 </svg>
